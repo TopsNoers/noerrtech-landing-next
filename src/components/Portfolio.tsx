@@ -38,7 +38,7 @@ export default function Portfolio() {
             Portfolio
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Coming soon! I'm currently working on some exciting projects that I'll be sharing here.
+            Coming soon! I&apos;m currently working on some exciting projects that I&apos;ll be sharing here.
           </p>
         </div>
 

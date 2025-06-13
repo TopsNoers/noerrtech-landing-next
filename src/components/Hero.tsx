@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +29,7 @@ export default function Hero() {
             }`}
           >
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-              <span className="block">Hi, I'm</span>
+              <span className="block">Hi, I&apos;m</span>
               <span className="block text-primary mt-2">Topan Nurpana</span>
             </h1>
             <p className="mt-6 text-xl sm:text-2xl text-muted-foreground max-w-2xl mx-auto">
