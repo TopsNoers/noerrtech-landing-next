@@ -70,37 +70,37 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-20 bg-accent/5"
+      className="py-12 sm:py-20 bg-accent/5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight sm:text-4xl">
             About Me
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             I work as a full-time and freelance web developer. I graduated from SMKN 2 Subang in 2018 with a major in Software Engineering.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-1 gap-12">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12">
           {/* Skills */}
           <div
             className={`transform transition-all duration-1000 delay-300 ${
               isVisible ? 'translate-x-0 opacity-100' : 'translate-x-4 opacity-0'
             }`}
           >
-            <h3 className="text-2xl font-semibold mb-6">What I Do</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">What I Do</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               {skills.map((skill) => (
                 <div
                   key={skill.title}
-                  className="p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors"
+                  className="p-4 sm:p-6 rounded-lg bg-background border border-border hover:border-primary/50 transition-colors"
                 >
-                  <div className="flex items-center space-x-3 mb-3">
+                  <div className="flex items-center space-x-3 mb-2 sm:mb-3">
                     <div className="text-primary">{skill.icon}</div>
-                    <h4 className="text-lg font-medium">{skill.title}</h4>
+                    <h4 className="text-base sm:text-lg font-medium">{skill.title}</h4>
                   </div>
-                  <p className="text-muted-foreground">{skill.description}</p>
+                  <p className="text-sm sm:text-base text-muted-foreground">{skill.description}</p>
                 </div>
               ))}
             </div>
